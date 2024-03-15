@@ -4,11 +4,7 @@ return { "nvim-treesitter/nvim-treesitter",
   config = function()
     local config = require("nvim-treesitter.configs")
     config.setup({
-      ensure_installed = {
-        "lua", "java", "javascript", "c_sharp", "json",
-        "php", "markdown", "text"
-      },
-      ensure_installed = {},
+      auto_install = true,
       highlight = { enabled = true },
       indent = { enabled = true }
     })
